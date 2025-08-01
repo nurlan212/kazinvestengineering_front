@@ -1,6 +1,5 @@
 'use client'
 
-import { setError } from '@/app/_utils/setContentData';
 import ClearButton from '../ClearButton/ClearButton';
 import SendButton from '../SendButton/SendButton';
 import TextInput from '../TextInput/TextInput';
