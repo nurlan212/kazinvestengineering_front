@@ -71,3 +71,9 @@
 .button:-webkit-details-marker {
   display: none;
 }
+
+@media (max-width: 850px) {
+  .button {
+    padding-inline: 6px;
+  }
+}
