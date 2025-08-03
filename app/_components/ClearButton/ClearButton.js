@@ -13,7 +13,7 @@ const ClearButton = () => {
   }
 
   return(
-    <Button title={'Очистить'} onClickHandler={onClickHandler}/>
+    <Button title={'Очистить'} onClick={onClickHandler}/>
   )
 }
 

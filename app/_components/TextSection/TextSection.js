@@ -1,6 +1,7 @@
 'use client'
 
 import ClearButton from '../ClearButton/ClearButton';
+import MicButton from '../MicButton/MicButton';
 import SendButton from '../SendButton/SendButton';
 import TextInput from '../TextInput/TextInput';
 import Button from '../ui/Button/Button';
@@ -36,8 +37,14 @@ const TextSection = () => {
     <section className={styles.textSection}>
       <TextInput />
         <div className={styles.buttons}>
-            <ClearButton />
-            <SendButton />    
+            <div>
+              <MicButton />
+            </div>
+            <div className={styles.rightSide}>
+              <ClearButton />
+              <SendButton /> 
+            </div>
+               
         </div>     
     </section>
   )

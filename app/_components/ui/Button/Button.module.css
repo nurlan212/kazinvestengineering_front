@@ -2,12 +2,16 @@
 
 /* CSS */
 .button {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: #FAFBFC;
   border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-  box-sizing: border-box;
+  -webkit-box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+          box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #24292E;
   cursor: pointer;
   display: inline-block;
@@ -18,10 +22,15 @@
   list-style: none;
   padding: 6px 16px;
   position: relative;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  -o-transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
   transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
-  user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
   word-wrap: break-word;
@@ -30,7 +39,9 @@
 .button:hover {
   background-color: #F3F4F6;
   text-decoration: none;
-  transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+       -o-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
 
 .button:disabled {
@@ -42,7 +53,10 @@
 
 .button:active {
   background-color: #EDEFF2;
-  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(34, 60, 80, 0.6) inset;
+          box-shadow: 0px 0px 1px 0px rgba(34, 60, 80, 0.6) inset;
+  -webkit-transition: none 0s;
+  -o-transition: none 0s;
   transition: none 0s;
 }
 

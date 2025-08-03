@@ -48,7 +48,7 @@ const SendButton = () => {
   }
 
   return(
-    <Button title={'Отправить'} onClickHandler={onClickHandler}/>
+    <Button title={'Отправить'} onClick={onClickHandler}/>
   )
 }
 

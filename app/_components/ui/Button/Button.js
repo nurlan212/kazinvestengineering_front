@@ -1,8 +1,9 @@
 import styles from './Button.module.css';
 
-const Button = ({title, onClickHandler}) => {
+const Button = (props) => {
+  const {title, ...currentProps} = props;
   return(
-    <button className={styles.button} onClick={onClickHandler}>{title}</button>
+    <button className={styles.button} {...currentProps}>{title}</button>
   )
 }
 
